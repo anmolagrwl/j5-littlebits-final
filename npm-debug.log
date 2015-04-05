@@ -1,0 +1,213 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'serialport' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 verbose config Skipping project config: /Users/apple/.npmrc. (matches userconfig)
+5 silly cache add args [ 'serialport', null ]
+6 verbose cache add spec serialport
+7 silly cache add parsed spec { raw: 'serialport',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'serialport',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed serialport@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'serialport', range: '*', hasData: false }
+12 silly mapToRegistry name serialport
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/serialport
+16 verbose addNameRange registry:https://registry.npmjs.org/serialport not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/serialport
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 12:29:07 AM
+20 verbose request id 030d32d0810543bf
+21 verbose etag "NY7PO3RUPUJ9C14YTBY1TORC"
+22 http request GET https://registry.npmjs.org/serialport
+23 http 304 https://registry.npmjs.org/serialport
+24 silly get cb [ 304,
+24 silly get   { date: 'Sat, 04 Apr 2015 18:59:08 GMT',
+24 silly get     server: 'Apache',
+24 silly get     via: '1.1 varnish',
+24 silly get     'last-modified': 'Sat, 04 Apr 2015 18:59:08 GMT',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     etag: '"NY7PO3RUPUJ9C14YTBY1TORC"',
+24 silly get     age: '0',
+24 silly get     'x-served-by': 'cache-sn87-SIN',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1428173948.481107,VS0,VE202',
+24 silly get     vary: 'Accept',
+24 silly get     'content-length': '0',
+24 silly get     'keep-alive': 'timeout=10, max=50',
+24 silly get     connection: 'Keep-Alive' } ]
+25 verbose etag https://registry.npmjs.org/serialport from cache
+26 verbose get saving serialport to /Users/apple/.npm/registry.npmjs.org/serialport/.cache.json
+27 silly addNameRange number 2 { name: 'serialport', range: '*', hasData: true }
+28 silly addNameRange versions [ 'serialport',
+28 silly addNameRange   [ '0.1.0',
+28 silly addNameRange     '0.1.1',
+28 silly addNameRange     '0.1.3',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.2.2',
+28 silly addNameRange     '0.2.3',
+28 silly addNameRange     '0.2.4',
+28 silly addNameRange     '0.2.5',
+28 silly addNameRange     '0.2.6',
+28 silly addNameRange     '0.2.7',
+28 silly addNameRange     '0.2.8',
+28 silly addNameRange     '0.2.9',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.6.0',
+28 silly addNameRange     '0.6.1',
+28 silly addNameRange     '0.6.2',
+28 silly addNameRange     '0.6.3',
+28 silly addNameRange     '0.6.5',
+28 silly addNameRange     '0.6.6',
+28 silly addNameRange     '0.6.7',
+28 silly addNameRange     '0.7.0',
+28 silly addNameRange     '0.7.1',
+28 silly addNameRange     '0.7.2',
+28 silly addNameRange     '0.7.3',
+28 silly addNameRange     '0.7.4',
+28 silly addNameRange     '0.7.5',
+28 silly addNameRange     '1.0.0',
+28 silly addNameRange     '1.0.1',
+28 silly addNameRange     '1.0.2',
+28 silly addNameRange     '1.0.3',
+28 silly addNameRange     '1.0.4',
+28 silly addNameRange     '1.0.5',
+28 silly addNameRange     '1.0.6',
+28 silly addNameRange     '1.0.7',
+28 silly addNameRange     '1.0.8',
+28 silly addNameRange     '1.1.0',
+28 silly addNameRange     '1.1.1',
+28 silly addNameRange     '1.1.3',
+28 silly addNameRange     '1.2.0',
+28 silly addNameRange     '1.2.1',
+28 silly addNameRange     '1.2.2',
+28 silly addNameRange     '1.2.3',
+28 silly addNameRange     '1.2.4',
+28 silly addNameRange     '1.2.5',
+28 silly addNameRange     '1.3.0',
+28 silly addNameRange     '1.3.1',
+28 silly addNameRange     '1.4.0',
+28 silly addNameRange     '1.4.1',
+28 silly addNameRange     '1.4.2',
+28 silly addNameRange     '1.4.5',
+28 silly addNameRange     '1.4.6',
+28 silly addNameRange     '1.4.8',
+28 silly addNameRange     '1.4.9',
+28 silly addNameRange     '1.4.10',
+28 silly addNameRange     '1.5.0',
+28 silly addNameRange     '1.6.1',
+28 silly addNameRange     '1.6.2',
+28 silly addNameRange     '1.6.3' ] ]
+29 verbose addNamed serialport@1.6.3
+30 silly addNamed semver.valid 1.6.3
+31 silly addNamed semver.validRange 1.6.3
+32 silly cache afterAdd serialport@1.6.3
+33 verbose afterAdd /Users/apple/.npm/serialport/1.6.3/package/package.json not in flight; writing
+34 verbose afterAdd /Users/apple/.npm/serialport/1.6.3/package/package.json written
+35 silly install resolved [ { name: 'serialport',
+35 silly install resolved     version: '1.6.3',
+35 silly install resolved     description: 'Welcome your robotic javascript overlords. Better yet, program them!',
+35 silly install resolved     author:
+35 silly install resolved      { name: 'Chris Williams',
+35 silly install resolved        email: 'voodootikigod@gmail.com',
+35 silly install resolved        url: 'http://www.voodootikigod.com' },
+35 silly install resolved     binary:
+35 silly install resolved      { module_name: 'serialport',
+35 silly install resolved        module_path: './build/{module_name}/v{version}/{configuration}/{node_abi}-{platform}-{arch}/',
+35 silly install resolved        remote_path: './{module_name}/v{version}/{configuration}/',
+35 silly install resolved        package_name: '{node_abi}-{platform}-{arch}.tar.gz',
+35 silly install resolved        host: 'https://node-serialport.s3.amazonaws.com' },
+35 silly install resolved     main: './serialport',
+35 silly install resolved     repository:
+35 silly install resolved      { type: 'git',
+35 silly install resolved        url: 'git://github.com/voodootikigod/node-serialport.git' },
+35 silly install resolved     maintainers: [ [Object] ],
+35 silly install resolved     dependencies:
+35 silly install resolved      { async: '0.9.0',
+35 silly install resolved        bindings: '1.2.1',
+35 silly install resolved        debug: '^2.1.1',
+35 silly install resolved        nan: '1.7.0',
+35 silly install resolved        'node-pre-gyp': '0.6.x',
+35 silly install resolved        optimist: '~0.6.1',
+35 silly install resolved        sf: '0.1.7' },
+35 silly install resolved     devDependencies:
+35 silly install resolved      { mocha: '*',
+35 silly install resolved        chai: '*',
+35 silly install resolved        'sinon-chai': '*',
+35 silly install resolved        sinon: '*',
+35 silly install resolved        grunt: '*',
+35 silly install resolved        'grunt-cli': '*',
+35 silly install resolved        'grunt-mocha-test': '*',
+35 silly install resolved        'grunt-contrib-jshint': '*',
+35 silly install resolved        'sandboxed-module': '~0.3.0' },
+35 silly install resolved     engines: { node: '>= 0.10.0' },
+35 silly install resolved     bin:
+35 silly install resolved      { serialportlist: './bin/serialportList.js',
+35 silly install resolved        serialportterm: './bin/serialportTerminal.js' },
+35 silly install resolved     scripts:
+35 silly install resolved      { install: 'node-pre-gyp install --fallback-to-build',
+35 silly install resolved        test: 'grunt --verbose' },
+35 silly install resolved     contributors:
+35 silly install resolved      [ [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object],
+35 silly install resolved        [Object] ],
+35 silly install resolved     gitHead: 'cec7c2740b6df2301134eddfe6d8a756416d1dc0',
+35 silly install resolved     bugs: { url: 'https://github.com/voodootikigod/node-serialport/issues' },
+35 silly install resolved     homepage: 'https://github.com/voodootikigod/node-serialport',
+35 silly install resolved     bundleDependencies: [ 'node-pre-gyp' ],
+35 silly install resolved     _id: 'serialport@1.6.3',
+35 silly install resolved     _shasum: '96a8ccd380b5426de119d47c977983934f77b2eb',
+35 silly install resolved     _from: 'serialport@*',
+35 silly install resolved     _npmVersion: '2.5.1',
+35 silly install resolved     _nodeVersion: '0.10.36',
+35 silly install resolved     _npmUser: { name: 'voodootikigod', email: 'voodootikigod@gmail.com' },
+35 silly install resolved     dist:
+35 silly install resolved      { shasum: '96a8ccd380b5426de119d47c977983934f77b2eb',
+35 silly install resolved        tarball: 'http://registry.npmjs.org/serialport/-/serialport-1.6.3.tgz' },
+35 silly install resolved     directories: {},
+35 silly install resolved     _resolved: 'https://registry.npmjs.org/serialport/-/serialport-1.6.3.tgz',
+35 silly install resolved     readme: 'ERROR: No README data found!' } ]
+36 info install serialport@1.6.3 into /Users/apple
+37 info installOne serialport@1.6.3
+38 verbose installOne of serialport to /Users/apple not in flight; installing
+39 warn locking Error: EACCES, open '/Users/apple/.npm/_locks/serialport-2a5bf658213e081e.lock.STALE'
+39 warn locking     at Error (native)
+39 warn locking  /Users/apple/.npm/_locks/serialport-2a5bf658213e081e.lock failed { [Error: EACCES, open '/Users/apple/.npm/_locks/serialport-2a5bf658213e081e.lock.STALE']
+39 warn locking   errno: -13,
+39 warn locking   code: 'EACCES',
+39 warn locking   path: '/Users/apple/.npm/_locks/serialport-2a5bf658213e081e.lock.STALE' }
+40 verbose stack Error: Attempt to unlock /Users/apple/node_modules/serialport, which hasn't been locked
+40 verbose stack     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:66:11)
+40 verbose stack     at cb (/usr/local/lib/node_modules/npm/lib/install.js:929:5)
+40 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:933:20
+40 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:40:9
+40 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+40 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:227:24
+40 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+40 verbose stack     at FSReqWrap.oncomplete (fs.js:99:15)
+41 verbose cwd /Users/apple/Desktop/LittleBits/j5-littlebits
+42 error Darwin 14.1.0
+43 error argv "node" "/usr/local/bin/npm" "install" "serialport"
+44 error node v0.12.0
+45 error npm  v2.5.1
+46 error Attempt to unlock /Users/apple/node_modules/serialport, which hasn't been locked
+47 error If you need help, you may report this error at:
+47 error     <http://github.com/npm/npm/issues>
+48 verbose exit [ 1, true ]
