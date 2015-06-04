@@ -9,7 +9,7 @@ board.on("ready", function() {
     freq: 100
   });
 
-  var led = (new five.Led(1));
+  var led = (new five.Led(5));
   // Inject the `sensor` hardware into
   // the Repl instance's context;
   // allows direct command line access
@@ -36,9 +36,11 @@ board.on("ready", function() {
   // Fires when the pin is read for a value
   //
   sensor.scale([0, 100]).on("data", function() {
-    console.log(this.value, this.raw);
-    if ((this.value) > 0) {
-      led.on();   
+    // var value = Math.round(this.value);
+    var value = (this.value).toFixed(2);
+    console.log(value, this.raw);
+    if (value > 0.00) {
+      led.on();
     } else{
       led.off();
     };

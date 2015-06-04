@@ -12,6 +12,9 @@ board.on("ready", function() {
     led: led
   });
 
-  led.blink();
+  // led.blink();
+
+    // "blink" the led in 500ms on-off phase periods
+  led.blink(1000);
 
 });

@@ -1,5 +1,3 @@
-// buggy
-
 var five = require("johnny-five"),
   board, button;
 
@@ -10,7 +8,7 @@ board.on("ready", function() {
   // Create a new `button` hardware instance.
   // This example allows the button module to
   // create a completely default instance
-  button = new five.Button(0);
+  button = new five.Button("A0");
   var led = (new five.Led(1));
 
   led.off();

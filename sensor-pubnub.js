@@ -21,15 +21,16 @@ board.on("ready", function() {
   });
 
   sensor.scale([0, 10]).on("data", function() {
-    console.log(this.value, this.raw);
-    frequency = this.value;
+    // console.log(this.value, this.raw);
+    console.log(this.value.toFixed(2));
+    frequency = this.value.toFixed(2);
     message = { "Magnitude" : frequency };
 
     pubnub.publish({ 
       channel   : 'earthquake_frequency',
-      message   : message,
-      callback  : function(e) { console.log( "SUCCESS!", e ); },
-      error     : function(e) { console.log( "FAILED! RETRY PUBLISH!", e ); }
+      message   : message
+      // callback  : function(e) { console.log( "SUCCESS!", e ); },
+      // error     : function(e) { console.log( "FAILED! RETRY PUBLISH!", e ); }
     });
 
   });
