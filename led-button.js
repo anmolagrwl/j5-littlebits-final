@@ -1,20 +1,16 @@
 var five = require("johnny-five"),
-bumper, led;
+button, led;
 
 five.Board().on("ready", function() {
 
-  bumper = new five.Button("A0");
+  button = new five.Button("A0");
   led = new five.Led(1);
 
-  bumper.on("hit", function() {
-
+  button.on("hit", function() {
     led.on();
-
   })
 
-  bumper.on("release", function() {
-
+  button.on("release", function() {
     led.off();
-
   });
 });

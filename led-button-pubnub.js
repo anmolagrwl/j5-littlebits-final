@@ -3,8 +3,8 @@ button, led;
 
 var pubnub = require("pubnub")({
     ssl           : true,  // <- enable TLS Tunneling over TCP
-    publish_key   : "pub-c-67b64f52-9ac9-42df-9803-55fc0a646b22",
-    subscribe_key : "sub-c-49d69172-3e94-11e4-8c81-02ee2ddab7fe",
+    publish_key   : "demo",
+    subscribe_key : "demo",
     no_wait_for_pending : true
 });
 
@@ -18,7 +18,7 @@ five.Board().on("ready", function() {
     message = { "Button_status" : "On" };
 
     pubnub.publish({
-      channel   : 'earthquake_frequency',
+      channel   : 'j5-pubnub',
       message   : message
     });
 
@@ -29,13 +29,13 @@ five.Board().on("ready", function() {
     message = { "Button_status" : "Off" };
 
     pubnub.publish({
-      channel   : 'earthquake_frequency',
+      channel   : 'j5-pubnub',
       message   : message
     });
   });
 
   pubnub.subscribe({
-    channel : 'earthquake_frequency',
+    channel : 'j5-pubnub',
     message : function (data) {
       console.log(data);
       if (data.Button_status == "On") {

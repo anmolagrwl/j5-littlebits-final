@@ -1,5 +1,4 @@
 var five = require("johnny-five"),
-    // or "./lib/johnny-five" when running from the source
     board = new five.Board();
 
 board.on("ready", function() {
@@ -13,8 +12,7 @@ board.on("ready", function() {
   });
 
   // led.blink();
-
-    // "blink" the led in 500ms on-off phase periods
+  // "blink" the led in 1000ms on-off phase periods
   led.blink(1000);
 
 });
